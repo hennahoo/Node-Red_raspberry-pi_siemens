@@ -1,0 +1,21 @@
+---------------------------------------------------------------------
+KOMENTOJA    nodered  raspi  node-red
+---------------------------------------------------------------------
+https://nodered.org/docs/getting-started/raspberrypi
+
+node red aktivoidaan taustasercic   palveluksi komennolla:
+sudo systemctl enable nodered.service
+
+
+jonka jälkeen voidaan kysyä palvelun statyus komennolla:
+systemctl status nodered.service
+
+
+tai restartat palvelu:
+systemctl restart nodered.service
+
+
+
+
+iipeen asettaminen eth0  portille, esim. Raspberry Pi tietokoneelle:
+sudo  ifconfig eth0 192.168.6.84 netmask 255.255.255.0
